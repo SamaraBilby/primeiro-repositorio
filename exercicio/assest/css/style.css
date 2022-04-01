@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root{
+    --fundo-color: rgba(17, 102, 31, 0.863);
+    --fundo-color-escuro: rgba(5, 92, 20, 0.897);
+}
+
+** {
+    box-sizing: border-box;
+    outline: 10;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--fundo-color);
+    font-family: sans-serif, serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.tabelaImc {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.informacao {
+    width: 60%;
+    box-align: "center";
+    background: #fff
+}
+
+form label, form input, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input {
+    font-size: 24px;
+    height: 30px;
+    padding: 0 3px;
+}
+
+form button {
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    background: var(--fundo-color);
+    border: none;
+}
+
+form button:hover{
+    background: var(--fundo-color-escuro);
+}
+
+.paragrafo-resultado, .bad {
+    background: var(--fundo-color);
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .bad {
+    background: rgb(255, 150, 150);
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel = "stylesheet" href="./assest/css/style.css">
+</head>
+
+<body>
+    <section class="tabelaImc">
+        <h1 align="center">Tabela de IMC</h1>
+        <h1 id='hora'align="center"></h1>
+        <table class="informacao" align="center">
+            <tr >
+                <th align="center"><b>IMC</b></th>
+                <th align="center"<b>Resultado</b></th>            
+            </tr>
+            <tr>
+                <td align="center">Menos que 18.5</td>
+                <td align="center">Abaixo do peso</td>
+            </tr>
+            <tr>
+                <td align="center">Entre 18,5 e 24,9</td>
+                <td align="center">Peso normal</td>
+            </tr>
+            <tr>
+                <td align="center">Entre 25 e 29,9</td>
+                <td align="center">Sobrepeso</td>
+            </tr>
+            <tr>
+                <td align="center">Entre 30 e 34,9</td>
+                <td align="center">Obesidade grau 1</td>
+            </tr>
+            <tr>
+                <td align="center">Entre 35 e 39,9</td>
+                <td align="center">Obesidade grau 2</td>
+            </tr>
+            <tr>
+                <td align="center">Maior do que 40</td>
+                <td align="center">Obesidade grau 3</td>
+            </tr>
+        </table>
+        <h1 align="center">Cálculo IMC</h1>
+        <form action = "/" id="formulario" method="post">
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso" name="altura">
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura" name="altura">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado"></div>
+        
+        <script src="./assest/js/main.js"></script>
+
+    </section>
+</body>
+</html>
